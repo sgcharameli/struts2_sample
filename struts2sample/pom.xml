@@ -8,11 +8,21 @@
     <name>struts2sample Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <struts2.core-version>2.2.3</struts2.core-version>
+        <junit-version>4.12</junit-version>
+    </properties>
+
     <dependencies>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-core</artifactId>
+            <version>${struts2.core-version}</version>
+        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit-version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
